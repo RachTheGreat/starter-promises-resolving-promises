@@ -10,12 +10,16 @@ const tellPromise = tell(question);
 tellPromise.then((fortune) => {
     console.log(question);
     console.log(fortune);
-});
+})
 
 // use external variables!
 // remember that you can use variables outside of the scope
-// of the then() callback function
+// of the then() callback function (USED TO ACCESS RESOLVED VALUE)
 
+
+// using the catch() method ERROR HANDLER FOR PROMISES
+
+.catch(console.error);
 
 
 
